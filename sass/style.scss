@@ -19,6 +19,7 @@ body {
     h2 {
         font-size: 40px;
         margin-bottom: 20px;
+        font-weight: 900;
     }
     .img__container {
         height: 300px;
@@ -169,6 +170,41 @@ footer {
     }
 }
 
+@media screen and (max-width: 1000px){
+    .align {
+        display: flex;
+        align-items: center;
+
+        .tag {
+            h3 {
+                font-weight: 900;
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 893px){
+    .align {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 493px){
+    body {
+        padding: 20px;
+    }
+    .align {
+
+        .tag {
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1000px){
     main {
         display: flex;
@@ -188,5 +224,9 @@ footer {
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
+
+        img {
+            width: 100px;
+        }
     }
 }
