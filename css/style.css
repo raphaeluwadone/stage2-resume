@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  padding: 40px;
+  background-color: #0a0a0a;
+}
+
+.left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.left .img__container {
+  height: 300px;
+  position: relative;
+}
+
+.left img {
+  width: 300px;
+}
+
+@media screen and (min-width: 450px) {
+  .left img {
+    width: 300px;
+    position: relative;
+  }
+  .left img:after {
+    content: "";
+    background-color: magenta;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 300;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .left img {
+    width: 100%;
+  }
+}
+
+.left .tag {
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+.left .tech {
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.left .tech h5 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid grey;
+}
+
+.left .tech p {
+  margin: 8px 0;
+}
+
+.right .profile {
+  margin-bottom: 20px;
+}
+
+.right .profile h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid grey;
+  margin-bottom: 20px;
+}
+
+.right .profile p {
+  max-width: 900px;
+  line-height: 20px;
+}
+
+.right .experience h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid grey;
+  margin-bottom: 20px;
+}
+
+.right .experience .job {
+  margin-bottom: 20px;
+}
+
+.right .experience .job li {
+  margin: 15px 0;
+}
+
+.right .experience .job h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.right .experience .job h5 {
+  font-size: 18px;
+}
+
+.right .experience .job span {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.right .education h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid grey;
+  margin-bottom: 20px;
+}
+
+.right .education .single {
+  margin-bottom: 20px;
+}
+
+.right .education .single h6 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid grey;
+  margin-bottom: 20px;
+}
+
+footer .contact div {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer .contact div span {
+  font-weight: lighter;
+}
+
+footer .socials div {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer .socials div a {
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 5px solid grey;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .left {
+    margin-right: 30px;
+  }
+  footer {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer h2 {
+    border: none;
+  }
+}
